@@ -1,29 +1,59 @@
-@use "color" as color;
+@use "./modules/color" as color;
+@use "./modules/mixins.scss" as mixin;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-}
-body {
     font-family: 'Open Sans', sans-serif;
 }
 
 .section {
     width: 100vw;
     height: 100vh;
-    background-image: url(coffee.jpg);
-    background-size: cover;
+    background-color: color.$background1;
+    // background-image: url(coffee.jpg);
+    // background-size: cover;
+}
+.section--secondary {
+    width: 100vw;
+    height: 100vh;
+    background-color: color.$background2;
 }
 
 .header {
     display: flex;
-    padding: 30px 0px;
+    padding: 1.5rem;
     justify-content: space-between;
+    background-color: color.$background2;
+    @include mixin.phone {
+        padding: 0.5rem;
+    }
+    @include mixin.tablet {
+        padding: 0.75rem;
+    }
+    @include mixin.landscape-tablet {
+        padding: 1rem;
+    }
+    @include mixin.laptop {
+        padding: 1.2rem;
+    }
     &__name {
-        padding-left: 30px;
+        padding-left: 1.5rem;
         color: color.$primary;
         font-family: 'Open Sans', sans-serif;
+        @include mixin.phone {
+            padding: 0.5rem;
+        }
+        @include mixin.tablet {
+            padding: 0.75rem;
+        }
+        @include mixin.landscape-tablet {
+            padding: 1rem;
+        }
+        @include mixin.laptop {
+            padding: 1.2rem;
+        }
     }
     &__navbar { 
         display: flex;
@@ -33,7 +63,19 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: right;
-        width: 400px;
+        width: 19rem;
+        @include mixin.phone {
+            width: 10rem;
+        }
+        @include mixin.tablet {
+            width: 12rem;
+        }
+        @include mixin.landscape-tablet {
+            width: 14rem;
+        }
+        @include mixin.laptop {
+            width: 17rem;
+        }
     }
     &__items {
         list-style: none;
@@ -42,8 +84,8 @@ body {
 
 .link {
     text-decoration: none;
-        color: color.$primary;
-    }
+    color: color.$primary;
+}
 
 .icon {
     font-size: 25px;
@@ -52,22 +94,43 @@ body {
 
 .main {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    padding: 0px 200px;
+    padding: 3rem 12.5rem;
+    @include mixin.phone {
+        padding: 5rem 5rem;
+    }
+    @include mixin.tablet {
+        padding: 5rem 7rem;
+    }
+    @include mixin.landscape-tablet {
+        padding: 3rem 8.5rem;
+    }
+    @include mixin.laptop {
+        padding: 3rem 10rem;
+    }
     &__image{
         width: 300px;
         height: 400px;
         border-radius: 100px;
+        padding-bottom: 2rem;
+        @include mixin.phone {
+            width: 200px;
+            height: 240px;
+            border-radius: 50px;
+        }
+        @include mixin.tablet {
+            width: 250px;
+            height: 300px;
+            border-radius: 70px;
+        }
     }
     &__name {
         color: color.$primary;
-        padding-left: 50px;
     }
     &__name--role{
         font-style: oblique;
         color: color.$primary;
-        padding-left: 80px;
     }
 }
 
@@ -76,14 +139,21 @@ body {
     height:100%;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 200px;
+    align-items: center;
+    //padding: 0px 200px;
     &__title {
         color: color.$primary;
         padding-bottom: 20px;
     }
     &__para{
         color: color.$primary;
-        padding-right: 300px;
+        padding: 0rem 18rem;
+        @include mixin.phone {
+            padding: 0rem 1rem;
+        }
+        @include mixin.tablet {
+            padding: 0rem 1.5rem;;
+        }
     }
 }
 
@@ -160,7 +230,10 @@ body {
 }
 
 footer {
-    background-color: #cfb874;
+    background-color: color.$background2;
     padding: 20px;
     text-align: center;
   }
+
+
+
