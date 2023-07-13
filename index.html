@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Roche's Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <h2 class="header__name">< R O C H E / ></h2>
+        <nav class="header__navbar">
+            <ul class="header__list">
+                <li class="header__items">
+                    <a class="link header__link" href="#homeSection"><i class="fa-solid fa-house icon header__icon"></i></a></li>
+                <li class="header__items">
+                    <a class="link header__link" href="#aboutSection"><i class="fa-sharp fa-solid fa-circle-info icon header__icon"></i></a></li>
+                <li class="header__items">
+                    <a class="link header__link" href="#skillsSection"><i class="fa-solid fa-gear icon header__icon"></i></i></a></li>
+                <li class="header__items">
+                    <a class="link header__link" href="#projectSection"><i class="fa-solid fa-list-check icon header__icon"></i></a></li>
+                <li class="header__items">
+                    <a class="link header__link" href="#contactSection"><i class="fa-solid fa-envelope icon header__icon"></i></a></li> 
+            </ul>
+        </nav>
+    </header>
+    <section class="home-section" id="homeSection">
+        <main class="main">
+            <img class="main__image" src="./assets/profPic.jpg" alt="roche's picture">
+            <div class="main__title">
+                <h1 class="main__title--name">Hi! I'm Roche.</h1>
+                <p class="main__title--role">Full-stack developer</p>
+            </div>
+        </main>
+    </section>
+
+    <section class="about-section" id="aboutSection">
+        <main class="about">
+            <h2 class="about__title">About Me</h2>
+            <p class="about__para">
+                I am an enthusiastic software developer with experiences in various industries such as call centre, childcare, secondary education and healthcare. These varied roles have equipped me with strong communication, problem-solving, attention to detail, and interpersonal skills. I also developed a passion for continuous learning and getting excited on new things. <br /> <br />
+                I enjoy software development not only because it addresses my passion for learning but it also challenges me to foster my higher-order thinking skills which I believe is very essential in both personal and professional growth. I am always in awe about how technology revolutionise industries, enhance communication, solve complex problems and improve lives in general. I am thrilled about being part of this dynamic field where I can contribute to creating innovative solutions that positively impact people's lives.
+                <br /> <br />
+                Outside of work, I enjoy cooking, reading and traveling. These hobbies help me gain knowledge in various subjects and expose me to different cultures, thus enrich my perspective.
+                <br /> <br />
+                Overall, my diverse background, passion for technology, interpersonal skills, and technical aptitude make me an enthusiastic and well-rounded individual ready to embark on a career in software engineering. I look forward to utilizing my strengths and pursuing my passion to contribute to meaningful and innovative technological advancements.
+                
+            </p>
+        </main>
+    </section>
+
+    <section class="skills-section" id="skillsSection">
+        <main class="skills">
+            <h2 class="skills__title">I am skilled in...</h2>
+            <ul class="skills__icon">
+                <li class="skills__items">
+                    <i class="fa-brands fa-html5 skills__icon--html"></i></li>
+                <li class="skills__items">
+                    <i class="fa-brands fa-sass skills__icon--sass"></i></li>
+                <li class="skills__items">
+                    <i class="fa-brands fa-square-js skills__icon--js"></i></i></li>
+                <li class="skills__items">
+                    <i class="fa-brands fa-react skills__icon--react"></i></li>
+                <li class="skills__items">
+                    <i class="fa-brands fa-java skills__icon--java"></i></li>
+                <li class="skills__items">
+                    <i class="fa-brands fa-git skills__icon--git"></i></li>
+                <li class="skills__items">
+                    <i class="fa-brands fa-aws skills__icon--aws"></i></li>
+                <li class="skills__items">
+                    <i class="fa-brands fa-google skills__icon--google"><span> FireBase & FireStore</span></i></li>
+            </ul>
+        </main>
+    </section>
+
+    <section class="project-section" id="projectSection">
+        <main class="project">
+            <h2 class="project__title">Some of my projects...</h2>
+            <div class="project__container">
+                <div class="project__pair">
+                    <h4 class="project__name">FakeOS</h4>
+                    <img class="project__image" src="./assets/fakeOS.png" alt="project 1">
+                    <p class="project__para">An Operating System concept for iPhone built using HTML, SCSS, and JavaScript. 
+                    </p>
+                </div>
+                <div class="project__pair">
+                    <h4 class="project__name">Morse Code Translator</h4>
+                    <img class="project__image" src="./assets/morseCode.png" alt="project 1">
+                    <p class="project__para">An interactive morse code translator built using JavaScript, HTML and SCSS.</p>
+                </div>
+                <div class="project__pair">
+                    <h4 class="project__name">Google Books</h4>
+                    <img class="project__image" src="./assets/googleBooks.png" alt="project 1">
+                    <p class="project__para">A Google Books Search Engine built using React and SCSS. It fetches data from the Google Books API.
+                    </p>
+                </div>
+                <!-- <div class="project__pair">
+                    <h4 class="project__name">E-commerce</h4>
+                    <img class="project__image" src="./assets/computer.jpg" alt="project 1">
+                    <p class="project__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci cum, corrupti illum at.</p>
+                </div> -->
+                <!-- <div class="project__pair">
+                    <h4 class="project__name">MineSweeper</h4>
+                    <img class="project__image" src="./assets/computer.jpg" alt="project 1">
+                    <p class="project__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci cum, corrupti illum at.</p>
+                </div> -->
+            </div>
+        </main>
+    </section>
+
+    <section class="contact-section" id="contactSection">
+        <main class="contact">
+            <h2 class="contact__title">Connect with me.</h2>
+            <ul class="contact__icon">
+                <li class="contact__items">
+                    <a class="link skills__link" href="https://github.com/rocheamor"><i class="fa-brands fa-github contact__icon--github"></i></a></li>
+                <li class="contact__items">
+                    <a class="link skills__link" href="https://www.linkedin.com/in/roche-amor-gador-32554a244/"><i class="fa-brands fa-linkedin contact__icon--linkedin"></i></a></li>
+                <!-- <li class="contact__items">
+                    <a class="link skills__link" href="gmail.com"><i class="fa-solid fa-envelope contact__icon--gmail"></i></i></a></li> -->
+            </ul>
+        </main>
+        <footer>
+            <p>&copy; 2023 Roche. Made with HTML and SCSS.</p>
+        </footer>
+    </section>
+</body>
+</html>
+
+<!-- // $primary: brown;
+// $background1: #eee8aa;
+// $background2: #f3b77c; -->
