@@ -316,6 +316,19 @@
   color: #265622;
   padding-top: 10px;
 }
+.project-section .project__links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  margin-top: 10px;
+  color: #265622;
+}
+.project-section .project__list {
+  list-style: none;
+  font-size: 20px;
+  color: #265622;
+}
 
 .contact-section {
   padding: 30px 0px;

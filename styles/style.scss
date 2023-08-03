@@ -274,9 +274,22 @@
             width: 200px;
             height: 250px;
         }
-        &__para{
+        &__para {
             color: color.$primary;
             padding-top: 10px;
+        }
+        &__links {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 150px;
+            margin-top: 10px;
+            color: color.$primary;
+        }
+        &__list {
+            list-style: none;
+            font-size: 20px;
+            color: color.$primary;
         }
     }
 }
