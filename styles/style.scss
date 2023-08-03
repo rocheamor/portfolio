@@ -80,19 +80,6 @@
     }
 }
 
-// .section {
-//     width: 100vw;
-//     height: 100vh;
-//     background-color: color.$background1;
-//     // background-image: url(./assets/coffee.jpg);
-//     // background-size: cover;
-// }
-// .section--secondary {
-//     width: 100vw;
-//     height: 100vh;
-//     background-color: color.$background2;
-// }
-
 .home-section {
     padding: 30px 0px;
     background-color: color.$background1;
@@ -158,7 +145,6 @@
     padding: 50px 0px;
     background-color: color.$background2;
     .about {
-        // height: 85vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -238,10 +224,10 @@
 .project-section {    
     padding: 30px 0px;
     background-color: color.$background2;
+    color: color.$primary;
     .project {
         padding: 0px 20px;
         &__title {
-            color: color.$primary;
             font-size: 30px;
             padding-bottom: 30px;
             text-align: center;
@@ -264,7 +250,6 @@
             text-align: center;
             margin: 15px;
             padding: 20px;
-            color: color.$primary;
         }
         &__name {
             font-size: 20px;
@@ -275,7 +260,6 @@
             height: 250px;
         }
         &__para {
-            color: color.$primary;
             padding-top: 10px;
         }
         &__links {
@@ -284,12 +268,10 @@
             align-items: center;
             width: 150px;
             margin-top: 10px;
-            color: color.$primary;
         }
         &__list {
             list-style: none;
             font-size: 20px;
-            color: color.$primary;
         }
     }
 }
